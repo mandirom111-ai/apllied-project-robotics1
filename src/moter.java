@@ -18,7 +18,7 @@ public class moter {
         rightMotor.setSpeed(360);
         leftMotor.forward();
         rightMotor.forward();
-        Delay.msDelay(3000);       // 3 secs
+        Delay.msDelay(4000);       // 3 secs
 
         leftMotor.rotate(720);
         rightMotor.rotate(-720);
