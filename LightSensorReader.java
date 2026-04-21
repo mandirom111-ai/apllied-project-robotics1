@@ -34,7 +34,7 @@ class LightSensorBase {
         Thread sensorThread = new Thread(sensorLogic);
         sensorThread.setDaemon(true);
         sensorThread.start();
-        while (!Button.ESCAPE.isDown()) {
+        while (!Button.ESCAPE.isup()) {
             Delay.msDelay(50);
         }
         lightSensor.close();
