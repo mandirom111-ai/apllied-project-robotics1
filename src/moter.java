@@ -32,7 +32,7 @@ public class moter {
         
         leftMotor.forward();
         rightMotor.forward();
-        Delay.msDelay(3000);       // 3 secs
+        Delay.msDelay(5000);       // 3 secs
 
 
         // Stop motors
@@ -43,6 +43,6 @@ public class moter {
         leftMotor.close();
         rightMotor.close();
 
-        System.out.println("test completed. Motors shoulve been working");
+        System.out.println("test completed. Motors shoulve been working smmothly");
     }
 }
