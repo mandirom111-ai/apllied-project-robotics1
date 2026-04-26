@@ -22,7 +22,7 @@ public class LightSensorReader implements Runnable {
         while (!Button.ESCAPE.isDown()) {
             lightMode.fetchSample(sample, 0);
             lightValue = sample[0];
-            Delay.msDelay(50);
+            Delay.msDelay(60);
         }
     }
 }
@@ -34,7 +34,7 @@ class LightSensorBase {
         Thread sensorThread = new Thread(sensorLogic);
         sensorThread.setDaemon(true);
         sensorThread.start();
-        while (!Button.ESCAPE.isup()) {
+        while (!Button.ESCAPE.isdown()) {
             Delay.msDelay(50);
         }
         lightSensor.close();
