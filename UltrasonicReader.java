@@ -35,7 +35,7 @@ class UltrasonicBase {
         sensorThread.setDaemon(true);
         sensorThread.start();
         while (!Button.ESCAPE.isDown()) {
-            Delay.msDelay(50);
+            Delay.msDelay(60);
         }
         ultrasonicSensor.close();
     }
