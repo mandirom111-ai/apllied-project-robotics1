@@ -22,6 +22,7 @@ public class LightSensorReader implements Runnable {
         while (!Button.ESCAPE.isDown()) {
             lightMode.fetchSample(sample, 0);
             lightValue = sample[0];
+            SharedData.lightIntensity = (int)(lightValue * 100);
             Delay.msDelay(60);
         }
     }
