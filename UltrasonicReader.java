@@ -22,6 +22,12 @@ public class UltrasonicReader implements Runnable {
         while (!Button.ESCAPE.isDown()) {
             distanceMode.fetchSample(sample, 0);
             distanceValue = sample[0];
+            SharedData.distance = distanceValue;
+            if (distanceValue < 0.15f) {
+                SharedData.ObjDetected = true;
+            } else {
+                SharedData.ObjDetected = false;
+            }
             Delay.msDelay(50);
         }
     }
