@@ -65,6 +65,7 @@ public class MainFinal {
         // Initialize and start the sensor threads
         Thread ultrasonicThread = new Thread(new UltrasonicReader());
         Thread lightThread = new Thread(new LightSensorReader());
+        new Thread(new moter()).start();
 
         ultrasonicThread.start();
         lightThread.start();
