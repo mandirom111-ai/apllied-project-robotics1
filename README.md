@@ -1,1 +1,1 @@
-# apllied-project-robotics1
+This is the repo where we make edits to equip our robots with functional codes for it to follow a black line, adjust and maneuver when running out of the line. We also added obstacle detection as well as obstacle avoidance to the robot.
